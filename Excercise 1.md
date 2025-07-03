@@ -37,3 +37,33 @@ In company C1, the only lead manager is LM1. There are two senior managers, SM1 
 In company C2, the only lead manager is LM2. There is one senior manager, SM3, under LM2. There are two managers, M2 and M3, under senior manager SM3. There is one employee, E3, under manager M2, and another employee, E4, under manager, M3.
 
 ## Solution
+
+SELECT 
+
+    c.company_code,
+    c.founder,
+    COUNT(DISTINCT lm.lead_manager_code) AS lead_manager_count,
+    COUNT(DISTINCT sm.senior_manager_code) AS senior_manager_count,
+    COUNT(DISTINCT m.manager_code) AS manager_count,
+    COUNT(DISTINCT e.employee_code) AS employee_count
+FROM 
+
+    Company c
+LEFT JOIN
+
+    Lead_Manager lm ON c.company_code = lm.company_code /* Left join porque quero que mostre todas as empresas mesmo que nao tenha nenhum lead manager*/ 
+LEFT JOIN 
+
+    Senior_Manager sm ON c.company_code = sm.company_code
+LEFT JOIN 
+
+    Manager m ON c.company_code = m.company_code
+LEFT JOIN 
+
+    Employee e ON c.company_code = e.company_code
+GROUP BY 
+
+    c.company_code, c.founder
+ORDER BY 
+
+    c.company_code;
