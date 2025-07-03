@@ -16,7 +16,7 @@ Feel free to explore the exercises below, with links to each detailed folder.
 Description:
 
 Query to print the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees.
-<a href="https://github.com/afonsocvn/Sales-Project--Data-Analysis-Interactive-Dashboard-cration-using-Power-BI-/blob/main/Or%C3%ADgenes%20Articulos.7z">-->Explore excercise 1</a>
+<a href="https://github.com/afonsocvn/SQL-Projects/blob/main/Excercise%201.md">-->Explore excercise 1</a>
 
 Exercise 2 — 
 Description:
