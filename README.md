@@ -18,10 +18,9 @@ Description:
 Query to print the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees.
 <a href="https://github.com/afonsocvn/SQL-Projects/blob/main/Excercise%201.md">-->Explore excercise 1</a>
 
-Exercise 2 — 
-Description:
-
-Explore Exercise 2 »
+Exercise 2 — Weather Observation Station 18
+Description: Query to calculate thw Manhattan Distance between 2 points
+<a href="https://github.com/afonsocvn/SQL-Projects/blob/main/Excercise%202.md)"> -->Explore Exercise 2 </a>
 
 Exercise 3 —
 Description:
